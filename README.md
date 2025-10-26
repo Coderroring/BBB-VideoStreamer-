@@ -4,6 +4,8 @@ A server tool for playing Bilibili videos online on BlackBerry 9900 and other Bl
 
 No need to download videos to your BlackBerry, you can just play videos directly on your BlackBerry 9900 device without taking up too much storage space.Just like Bilibili on other platforms, you can watch online videos.
 
+Technically, HTTP media streaming is used to push media to BlackBerry for playback.
+
 
 
 
