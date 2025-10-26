@@ -1,5 +1,5 @@
 /*
- * Project: BBB-videotransformer
+ * Project: BBB-VideoStreamer
  * Author: Coderroring
  * Description: Node.js server to convert Bilibili videos into BlackBerry 9900 compatible format 
  * (H.264 Baseline Profile 320x240) using yt-dlp and ffmpeg, with asynchronous processing 
@@ -61,7 +61,7 @@ const ffmpegArgs = [
     '-i', inputPath,
     '-vf',
     "scale='if(gt(a,4/3),320,-2)':'if(gt(a,4/3),-2,240)',pad=320:240:(ow-iw)/2:(oh-ih)/2:black,format=yuv420p",
-    '-metadata:s:v:0', 'rotate=90', // 对竖版视频标记旋转
+    '-metadata:s:v:0', 'rotate=90', // Mark and rotate vertical videos
     '-vcodec', 'libx264',
     '-profile:v', 'baseline',
     '-preset', 'veryfast',
@@ -254,9 +254,9 @@ app.get('/stream', (req, res) => {
 app.get('/', (req, res) => {
     res.send(`
         <html>
-            <head><title>BBB-videotransformer</title></head>
+            <head><title>BBB-VideoStreamer</title></head>
             <body>
-                <h2>Download Bilibili Video for BlackBerry 9900</h2>
+                <h2>Watch Bilibili Video on BlackBerry 9900</h2>
                 <form action="/start_job" method="get">
                     <input type="text" name="url" placeholder="Paste Bilibili video URL" style="width:300px;">
                     <button type="submit">Start Download & Convert</button>
@@ -265,7 +265,7 @@ app.get('/', (req, res) => {
                 <p>
                     <a href="/clear_cache">Clear Server Cache</a>
                 </p>
-                <p style="font-size: small;">Project: BBB-videotransformer | Author: Coderroring</p>
+                <p style="font-size: small;">Project: BBB-VideoStreamer | Author: Coderroring</p>
             </body>
         </html>
     `);
