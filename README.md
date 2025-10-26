@@ -11,3 +11,4 @@ Technically, HTTP media streaming is used to push media to BlackBerry for playba
 
 Small note: Of the three "B"s in the name, the first two stand for BlackBerry, and the third one stands for Bilibili.
 
+For learning and testing purposes only. Illegal/abusive use is prohibited.
