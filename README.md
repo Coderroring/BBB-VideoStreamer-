@@ -1,4 +1,4 @@
-# BBB-videotransformer
+# BBB-VideoStreamer
 
 A server tool for playing Bilibili videos online on BlackBerry 9900 and other BlackBerry OS7 devices using HTTP media streaming. (You can use Termux for Android or other Linux distributions, but currently only the Android version of Termux is available.)
 
