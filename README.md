@@ -6,6 +6,8 @@ No need to download videos to your BlackBerry, you can just play videos directly
 
 Technically, HTTP media streaming is used to push media to BlackBerry for playback.
 
+I would like to thank Socialsisteryi for collecting the Bilibili API. Here is his repository: https://socialsisteryi.github.io/bilibili-API-collect/
+
 
 
 
