@@ -1,5 +1,5 @@
 // ==============================================
-// BBB-VideoStreamer v0.3.1 (Bilibili Mirror Frontend - 修复版)
+// BBB-VideoStreamer v0.3.0 (Bilibili Mirror Frontend - 修复版)
 // Author: Coderroring
 // Features:
 //  - BlackBerry 9900 optimized Bilibili frontend (Homepage + Details)
@@ -761,7 +761,7 @@ app.listen(port, '0.0.0.0', () => {
     }
 
     console.log(`=======================================================`);
-    console.log(`  BBB-VideoStreamer v0.3.1 (Bilibili Mirror Frontend)`);
+    console.log(`  BBB-VideoStreamer v0.3.0 (Bilibili Mirror Frontend)`);
     console.log(`  服务器正在运行!`);
     console.log(`  请在黑莓浏览器中访问: http://${localIp}:${port}`);
     console.log(`=======================================================`);
