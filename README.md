@@ -10,6 +10,10 @@ No need to download videos to your BlackBerry, you can just play videos directly
 
 Technically, HTTP media streaming is used to push media to BlackBerry for playback.
 
+>>>Please note that this branch (main) contains the basic core, not the full version.
+To view or use the BMS (Bilibili mirror site) version, please go to the Beta-Preview branch.
+<<<<
+
 🛠️ Termux Environment Setup Steps
 Please follow these steps to set up Termux on your Android phone to deploy the script.
 
@@ -19,11 +23,11 @@ First, update the Termux package list and install Node.js.
 
 # 1. Update package list
 
-pkg update -y
+>pkg update -y
 
 # 2. Install Node.js (including npm)
 
-pkg install nodejs -y
+>pkg install nodejs -y
 
 Step 2: Install video processing tools
 
@@ -31,11 +35,11 @@ The script relies on ffmpeg for video transcoding and yt-dlp to obtain Bilibili 
 
 # 1. Install Python (yt-dlp dependency) and FFmpeg
 
-pkg install python ffmpeg -y
+>pkg install python ffmpeg -y
 
 # 2. Install yt-dlp (recommended)
 
-pip install yt-dlp
+>pip install yt-dlp
 
 You can create a new folder to store the script files, such as "bb-video-server".
 
@@ -46,19 +50,19 @@ Place the server files: Upload your latest script file (e.g., server-0.4.0.js) t
 Install Node.js dependencies: 
 This script code primarily depends on the express framework.
 
-npm install express
+>npm install express
 
 Step 4: Run the server
 
 Once everything is ready, use Node.js to start your server script.
 
-node server-0.4.0.js
+>node server-0.4.0.js
 
 Step 5: Access on your Blackberry phone
 
 After the server starts, you will see a message similar to the following in Termux (this is the output of the server-0.4.0.js script):
 
-=======================================================
+>=======================================================
   BBB-VideoStreamer v0.4.0
   服务器正在运行!
   请在黑莓浏览器中访问: http://192.168.x.x:3000
