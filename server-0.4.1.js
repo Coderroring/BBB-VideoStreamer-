@@ -1,4 +1,11 @@
 // ==============================================
+//请注意！该版本目前已经确认有重大bug，无法正常使用！
+//请转到0.4.0或0.4.2版
+//该版本（0.4.1）无法正常使用！！！
+//Warning!!!
+//Please do not use this version！
+//This version cannot run properl！
+
 // BBB-VideoStreamer v0.4.1 (功能扩展版)
 // Author: Coderroring
 // Features:
