@@ -1,3 +1,5 @@
+![ScreenShot_2025-11-02_04-08-58_by_s4bb](https://github.com/user-attachments/assets/3387a4a5-5d76-44e4-9f58-799341c4df44)
+
 # BBB-VideoStreamer
 
 A server tool for playing Bilibili videos online on BlackBerry 9900 and other BlackBerry OS7 devices using HTTP media streaming. (You can use Termux for Android or other Linux distributions, but currently only the Android version of Termux is available.)
@@ -17,11 +19,11 @@ First, update the Termux package list and install Node.js.
 
 # 1. Update package list
 
-pkg update -y
+>pkg update -y
 
 # 2. Install Node.js (including npm)
 
-pkg install nodejs -y
+>pkg install nodejs -y
 
 Step 2: Install video processing tools
 
@@ -29,11 +31,11 @@ The script relies on ffmpeg for video transcoding and yt-dlp to obtain Bilibili 
 
 # 1. Install Python (yt-dlp dependency) and FFmpeg
 
-pkg install python ffmpeg -y
+>pkg install python ffmpeg -y
 
 # 2. Install yt-dlp (recommended)
 
-pip install yt-dlp
+>pip install yt-dlp
 
 You can create a new folder to store the script files, such as "bb-video-server".
 
@@ -44,19 +46,19 @@ Place the server files: Upload your latest script file (e.g., server-0.4.0.js) t
 Install Node.js dependencies: 
 This script code primarily depends on the express framework.
 
-npm install express
+>npm install express
 
 Step 4: Run the server
 
 Once everything is ready, use Node.js to start your server script.
 
-node server-0.4.0.js
+>node server-0.4.0.js
 
 Step 5: Access on your Blackberry phone
 
 After the server starts, you will see a message similar to the following in Termux (this is the output of the server-0.4.0.js script):
 
-=======================================================
+>=======================================================
   BBB-VideoStreamer v0.4.0
   服务器正在运行!
   请在黑莓浏览器中访问: http://192.168.x.x:3000
@@ -76,6 +78,7 @@ As mentioned before, to reliably obtain Bilibili video streams, especially anime
 
 
 
-Small note: Of the three "B"s in the name, the first two stand for BlackBerry, and the third one stands for Bilibili.
+>>Small note: Of the three "B"s in the name, the first two stand for BlackBerry, and the third one stands for Bilibili.
+>>BMS refers to the Bilibili mirror site (which is essentially a web front-end) here.
 
 For learning and testing purposes only. Illegal/abusive use is prohibited.
