@@ -10,13 +10,14 @@ No need to download videos to your BlackBerry, you can just play videos directly
 
 Technically, HTTP media streaming is used to push media to BlackBerry for playback.
 
->>>Please note that this branch (main) contains the basic core, not the full version.
+>>Please note that this branch (main) contains the basic core, not the full version.
+
 >>To view or use the BMS (Bilibili mirror site) version, please go to the Beta-Preview branch.
 
 
 🛠️ Termux Environment Setup Steps
 Please follow these steps to set up Termux on your Android phone to deploy the script.
-_Please note that the following preparations are the same for both the beta branch and the main branch.
+>>Please note that the following preparations are the same for both the beta branch and the main branch.
 
 Step 1: Install the core runtime environment
 
